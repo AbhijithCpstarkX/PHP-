@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bio Data Form</h1>
+        <form method="post" action="biodata.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="Gender">Gender:</label>
+
+            Male <input type="radio" id="male" name="male" value="male" required>
+            Female <input type="radio" id="female" name="male" value="female" required>
+
+            
+            
+            <label for="fathers name">Fathers name:</label>
+            <input type="fathers name" id="fathers name" name="fathers name" required>
+            
+            <label for="mothers name">Mothers name:</label>
+            <input type="text" id="mothers name" name="mothers name" required>
+
+            <label for="phno">PH no:</label>
+            <input type="text" id="phno" name="phno" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+             
+            <label for="Qualifications">Qualifications:</label>
+            <textarea id="text" name="Qualifications" rows="4" required></textarea>
+
+             
+            <label for="Soft Skills">Soft Skills:</label>
+            <textarea id="" name="softskills" rows="4" required></textarea>
+
+             
+            <label for="Technical Skills">Technical Skills:</label>
+            <textarea id="text" name="TechnicalSkills" rows="4" required></textarea>
+
+             
+
+            
+            
+            <input type="submit" value="Submit">
+        </form>
